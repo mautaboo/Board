@@ -1,9 +1,10 @@
 import React from 'react'
 import { Decoration,Reginfo,Container,Fullscreen,Imacos,Already,ContForm,Inputt,
-         Semititu,Botonform,Card,Pantalla,Imageen,Titulos, Textop} from './RegistroElements'
+         Semititu,Botonform,Card,BtnLink,Linkbtn,Imageen,Titulos, Textop} from './RegistroElements'
 import logo from '../Images/EBlogo.png'
 import Pizarron from '../Images/pizarra.png'
 import ParticlesComponent from './Anim'
+
 
 const Registro = () => {
 
@@ -12,7 +13,7 @@ const Registro = () => {
     <Container>
         <Reginfo>
             <Imacos src={logo}/>
-            <Already>¿Ya tienes cuenta?</Already>
+            <Already>¿Ya tienes cuenta?<Linkbtn href='/login'>Inicia Sesion</Linkbtn></Already>
             <ContForm>
             <Semititu>Nombre*</Semititu>  
             <Inputt type="text" name="name" placeholder="Nombre"/>
