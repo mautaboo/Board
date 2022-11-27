@@ -12,14 +12,15 @@ import {BrowserRouter as Router,
 
 import Registrop from './pages/Hindex';
 import Loginp from './pages/Logindex';
+import Boardapp from './pages/Boardindex';
 
 function App() {
   return (
     <Router>
        <Switch>
-        <Route path="/"><Registrop/></Route>
-        <Route path="/login"><Loginp/></Route>
-        <Route path="/boardapp"><Loginp/></Route>
+        <Route exact path="/"><Registrop/></Route>
+        <Route exact path="/login"><Loginp/></Route>
+        <Route path="/boardapp" exact><Boardapp/></Route>
       </Switch>
     </Router>
    

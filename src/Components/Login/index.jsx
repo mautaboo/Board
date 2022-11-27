@@ -1,6 +1,6 @@
 import React from 'react'
 import { Decoration,Loginfo,Container,Fullscreen,Imacos,Already,ContFormreg,Inputt,
-         Semititu,Botonform,Card,Pantalla,Imageen,Titulos, Textop} from './LoginElements'
+         Semititu,Botonform,Card,Pantalla,Linkbtn,Imageen,Titulos, Textop} from './LoginElements'
 import logo from '../Images/EBlogo.png'
 import Pizarron from '../Images/pizarra.png'
 import ParticlesComponent from './Anim'
@@ -12,7 +12,7 @@ const Login = () => {
     <Container>
         <Loginfo>
             <Imacos src={logo}/>
-            <Already>¿Aun no tienes una cuenta?</Already>
+            <Already>¿Aun no tienes una cuenta?<Linkbtn href='/'>Registrate</Linkbtn></Already>
             <ContFormreg>
             <Semititu>Email</Semititu>  
             <Inputt type="text" name="email" placeholder="Email"/>

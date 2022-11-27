@@ -125,7 +125,7 @@ transform: translate(-5%, -5%);
 
 //Div del texto del Link a la contraparte Login/Registro
 export const Already = styled.div`
-  width: 150px;
+  width: 230px;
   height: 150px;
   position: absolute;
   right: 5%;
@@ -156,4 +156,22 @@ export const Card = styled.div`
   -moz-box-shadow: 10px 7px 54px 0px rgba(0,0,0,0.92);
   box-shadow: 10px 7px 54px 0px rgba(0,0,0,0.92);
   margin: -20px 0 0 -20px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+`
+
+export const Linkbtn = styled.a`
+text-align: center;
+white-space: nowrap;
+font-family: 'Lato', sans-serif;
+color: #208094;
+font-size: 20px;
+outline: none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+&:hover {
+  transition: all 0.2s ease-in-out;
+  color: #84EAFF;
+}
 `

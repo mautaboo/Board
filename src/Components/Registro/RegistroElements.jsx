@@ -1,5 +1,7 @@
 //Importado de componentes
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
+
 
 export const Fullscreen = styled.div`
 height: 100vh;
@@ -157,3 +159,37 @@ export const Card = styled.div`
   box-shadow: 10px 7px 54px 0px rgba(0,0,0,0.92);
   margin: -20px 0 0 -20px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
 `
+export const BtnLink = styled(Link)`
+  text-align: center;
+  white-space: nowrap;
+  color: #e9e557;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+  }
+  `
+
+  export const Linkbtn = styled.a`
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  color: #208094;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #84EAFF;
+  }
+  `
